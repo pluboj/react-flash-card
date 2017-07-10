@@ -1,3 +1,39 @@
 .App {
   text-align: center;
 }
+
+.container {
+  width: 600px;
+  height: 350px;
+  margin: 150px 0px 0 150px;
+  border: 1px solid grey;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 140px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120px;
+  position: absolute;
+}
+
+.front {
+  background: #DEB887;
+}
+
+.back {
+  background: #b5eeb7;
+}

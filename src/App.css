@@ -2,15 +2,20 @@
   text-align: center;
 }
 
+body {
+  background: #d7d6d6;
+}
+
 .container {
   width: 600px;
   height: 350px;
   margin: 150px 0px 0 150px;
-  border: 1px solid grey;
+  border: 3px solid white;
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .card {
@@ -28,7 +33,7 @@
   position: relative;
 }
 
-.card span {
+.question {
   position: absolute;
   top: 25%;
   left: 0;
@@ -45,4 +50,9 @@
   background: #b5eeb7;
   color: black;
   font-size: 20px;
+}
+
+.id {
+  float: left;
+  padding-left: 10px;
 }

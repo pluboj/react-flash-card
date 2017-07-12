@@ -21,7 +21,7 @@ const store = [
   {
       id: 4,
       front:'The Schrödinger equation',
-      back: '',
+      back: <img src={sch} alt='pic'/>,
   }
 ];
 
@@ -61,9 +61,13 @@ class App extends Component {
             onClick={this.flipCard}
             >
             <div className={this.state.side}>
-              <span className="id">{this.state.cards[0].id}</span>
-              <span className="question">{this.state.cards[0][this.state.side]}
-                {this.state.cards[0][this.state.side] === '' ? <img src={sch} alt='pic'/> : '' }
+              <span 
+                className="id">
+                {this.state.cards[0].id}
+              </span>
+              <span 
+                className="question">
+                {this.state.cards[0][this.state.side]}
               </span>              
             </div>
           </div>
